@@ -1,0 +1,57 @@
+{
+  "en": {
+    "common": {
+      "loading": "लोड हो रहा है...",
+      "error": "कुछ गलत हो गया",
+      "retry": "पुनः प्रयास करें",
+      "save": "सहेजें",
+      "cancel": "रद्द करें",
+      "submit": "सबमिट करें",
+      "back": "वापस",
+      "next": "अगला",
+      "logout": "लॉगआउट"
+    },
+    "auth": {
+      "login": "साइन इन करें",
+      "register": "खाता बनाएं",
+      "email": "ईमेल पता",
+      "password": "पासवर्ड",
+      "name": "पूरा नाम",
+      "forgotPassword": "पासवर्ड भूल गए?",
+      "noAccount": "खाता नहीं है?",
+      "hasAccount": "पहले से खाता है?",
+      "loginSuccess": "वापस स्वागत है!"
+    },
+    "dashboard": {
+      "greeting": "नमस्ते,",
+      "subtitle": "AI-संचालित अंतर्दृष्टि के साथ अपने स्वास्थ्य की निगरानी करें",
+      "selectDisease": "रोग मॉड्यूल चुनें",
+      "recentPredictions": "हाल की भविष्यवाणियाँ"
+    },
+    "diseases": {
+      "diabetes": "मधुमेह",
+      "kidney": "गुर्दे की बीमारी",
+      "parkinsons": "पार्किंसंस",
+      "lung_cancer": "फेफड़े का कैंसर",
+      "thyroid": "थायरॉइड"
+    },
+    "result": {
+      "riskLevel": "जोखिम स्तर",
+      "probability": "संभावना",
+      "confidence": "विश्वास",
+      "whatThisMeans": "इसका क्या अर्थ है",
+      "recommendedActions": "अनुशंसित क्रियाएँ",
+      "seeDoctor": "डॉक्टर से कब मिलें",
+      "topFactors": "शीर्ष योगदान कारक",
+      "generateReport": "PDF रिपोर्ट बनाएं",
+      "saveHistory": "इतिहास में सहेजें",
+      "whatIf": "क्या होगा अगर विश्लेषण"
+    },
+    "emergency": {
+      "title": "उच्च जोखिम का पता चला",
+      "message": "आपकी भविष्यवाणी बहुत अधिक जोखिम दर्शाती है। कृपया तुरंत चिकित्सा सहायता लें।",
+      "callEmergency": "आपातकालीन कॉल करें (108)",
+      "acknowledge": "मैं समझता हूँ"
+    }
+  }
+}

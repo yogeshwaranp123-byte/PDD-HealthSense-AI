@@ -1,0 +1,94 @@
+{
+  "en": {
+    "common": {
+      "loading": "Loading...",
+      "error": "Something went wrong",
+      "retry": "Retry",
+      "save": "Save",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "back": "Back",
+      "next": "Next",
+      "logout": "Logout"
+    },
+    "auth": {
+      "login": "Sign In",
+      "register": "Create Account",
+      "email": "Email Address",
+      "password": "Password",
+      "name": "Full Name",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "hasAccount": "Already have an account?",
+      "loginSuccess": "Welcome back!"
+    },
+    "dashboard": {
+      "greeting": "Hello,",
+      "subtitle": "Monitor your health with AI-powered insights",
+      "selectDisease": "Select a Disease Module",
+      "recentPredictions": "Recent Predictions"
+    },
+    "diseases": {
+      "diabetes": "Diabetes",
+      "kidney": "Kidney Disease",
+      "parkinsons": "Parkinson's",
+      "lung_cancer": "Lung Cancer",
+      "thyroid": "Thyroid"
+    },
+    "result": {
+      "riskLevel": "Risk Level",
+      "probability": "Probability",
+      "confidence": "Confidence",
+      "whatThisMeans": "What This Means",
+      "recommendedActions": "Recommended Actions",
+      "seeDoctor": "When to See a Doctor",
+      "topFactors": "Top Contributing Factors",
+      "generateReport": "Generate PDF Report",
+      "saveHistory": "Save to History",
+      "whatIf": "What If Analysis"
+    },
+    "history": {
+      "title": "Prediction History",
+      "filterAll": "All",
+      "empty": "No predictions yet. Start by selecting a disease module.",
+      "riskTrend": "Risk Trend"
+    },
+    "chat": {
+      "title": "AI Health Assistant",
+      "disclaimer": "This assistant provides general health information only. It is not a substitute for professional medical advice.",
+      "placeholder": "Ask a health question...",
+      "send": "Send"
+    },
+    "hospitals": {
+      "title": "Nearby Hospitals",
+      "locating": "Locating you...",
+      "call": "Call"
+    },
+    "profile": {
+      "title": "Health Profile",
+      "age": "Age",
+      "gender": "Gender",
+      "weight": "Weight (kg)",
+      "height": "Height (cm)",
+      "bloodType": "Blood Type",
+      "conditions": "Existing Conditions",
+      "allergies": "Allergies",
+      "saved": "Profile saved successfully"
+    },
+    "settings": {
+      "title": "Settings",
+      "language": "Language",
+      "notifications": "Notifications",
+      "exportData": "Export My Data",
+      "deleteAccount": "Delete Account",
+      "about": "About HealthSense AI",
+      "version": "Version"
+    },
+    "emergency": {
+      "title": "High Risk Detected",
+      "message": "Your prediction indicates very high risk. Please seek immediate medical attention.",
+      "callEmergency": "Call Emergency (108)",
+      "acknowledge": "I Understand"
+    }
+  }
+}

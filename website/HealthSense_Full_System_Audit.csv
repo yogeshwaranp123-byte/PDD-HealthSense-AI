@@ -1,0 +1,12 @@
+Module/Component,Verified Flow,Status,Details/Observation
+Backend Service Status,Root Service Health check (GET /),PASSED,FastAPI Server is healthy and running. Service: 'HealthSense AI API'
+Backend Authentication,User Registration (POST /auth/register),PASSED,Registered new user 'audit_user_1781189502@healthsense.ai' successfully. JWT tokens issued.
+Backend Authentication,Demo User Authentication (POST /auth/login),PASSED,Successfully authenticated with demo user credentials. Access token retrieved.
+Backend User Profile,Retrieve Profile Data (GET /user/profile),PASSED,"Profile loaded. Name: 'Demo Tester', Age: 32, Blood: O+"
+Backend Hospital Finder,Nearby Hospitals Lookup (GET /hospitals/nearby),PASSED,Successfully retrieved 8 nearby hospitals using coordinates and address.
+Backend AI Chat,Clinical Health Assistant Query (POST /chat),PASSED,Chat integration with Gemini active. Reply length: 1810 chars.
+Backend Disease Predictor,Risk Prediction from Report Upload (POST /predict/report),PASSED,Successfully analyzed mock PNG report for diabetes. Risk level: 50.0% (negative). Prediction ID: 128be5608a8747d98281f3fa
+Backend Report Generator,PDF Report Generation (POST /report/generate),PASSED,Successfully compiled and downloaded PDF report. File size: 2823 bytes.
+Frontend Web Service,Local Vite Dev Server (GET /),PASSED,React Web App is running and responding.
+Frontend Mobile Project Files,React Native Mobile Entry Validation,PASSED,React Native Expo directory structure verified successfully with App.tsx and packages configuration.
+Frontend Web Project Files,Vite Web Config Validation,PASSED,Vite React web directory structure verified successfully with index.html and packages configuration.

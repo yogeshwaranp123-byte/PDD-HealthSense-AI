@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "HealthSense AI",
+    "slug": "healthsense-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A1628"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.healthsense.ai",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "HealthSense needs your location to find nearby hospitals.",
+        "NSMicrophoneUsageDescription": "HealthSense needs microphone access for voice input."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0A1628"
+      },
+      "package": "com.healthsense.ai",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-location",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dab0273e-362b-42dc-a9d7-861d59b9cbe8"
+      }
+    },
+    "owner": "akashkrish10"
+  }
+}
