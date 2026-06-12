@@ -12,12 +12,15 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Give the GITHUB_TOKEN write permissions to commit changes back to the repo
+permissions:
+  contents: write
+
 jobs:
   build-reports:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 
     steps:
       - name: Checkout Code
@@ -39,10 +42,17 @@ jobs:
       - name: Run Security Report Generator
         run: python backend/generate_security_report.py
 
-      - name: Upload Excel Reports as Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: Excel-Reports-Archive
-          path: |
-            *.xlsx
-            Vulnerability Test Results/*.xlsx
+      - name: Commit and Push Excel Reports
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the generated Excel files
+          git add *.xlsx
+          git add "Vulnerability Test Results/*.xlsx" || true
+          
+          # Commit the changes (only if there are new/updated files)
+          git commit -m "Auto-generate Excel reports [skip ci]" || echo "No changes to commit"
+          
+          # Push back to main branch
+          git push origin main
