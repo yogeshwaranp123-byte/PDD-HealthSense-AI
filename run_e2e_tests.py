@@ -591,7 +591,12 @@ def main():
     
     try:
         # Start servers dynamically
-        servers_started = start_servers()
+        if os.path.exists(BACKEND_DIR) and os.path.exists(WEBSITE_DIR):
+            servers_started = start_servers()
+        else:
+            print("\n[INFO] Backend or website directory not found. Forcing simulation mode.")
+            args.simulate = True
+
         
         # Choose execution path
         if args.simulate or not SELENIUM_AVAILABLE:
