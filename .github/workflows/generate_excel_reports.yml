@@ -50,6 +50,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
+          # Checkout main branch to avoid detached HEAD
+          git checkout main
+          
           # Stage the generated Excel files
           git add *.xlsx
           git add "Vulnerability Test Results/*.xlsx" || true
