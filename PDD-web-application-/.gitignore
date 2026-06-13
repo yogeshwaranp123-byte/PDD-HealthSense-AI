@@ -1,0 +1,14 @@
+# HealthSense AI
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+venv/
+*.pyc
+.env
+backend/app/pkl/*.pkl
+datasets/

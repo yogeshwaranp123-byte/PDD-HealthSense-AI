@@ -1,0 +1,16 @@
+# Development, testing, and automation dependencies
+# NOT included in production builds.
+# Install with: pip install -r requirements-dev.txt
+
+# End-to-end testing (LOW-04: moved from requirements.txt)
+selenium==4.21.0
+webdriver-manager==4.0.1
+
+# Excel report generation
+openpyxl==3.1.2
+
+# Code quality
+ruff
+mypy
+pytest
+httpx      # needed for FastAPI TestClient

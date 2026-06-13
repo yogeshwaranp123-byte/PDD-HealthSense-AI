@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: healthsense-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.8"
+      # LOW-02: All secrets declared explicitly — Render will enforce they are set
+      # Set their values in the Render dashboard under "Environment" > "Secret Files"
+      - key: SECRET_KEY
+        sync: false          # Must be set manually in Render dashboard
+      - key: MONGO_URI
+        sync: false          # Must be set manually in Render dashboard
+      - key: GEMINI_API_KEY
+        sync: false          # Must be set manually in Render dashboard
+      - key: ALLOWED_ORIGINS
+        value: "https://your-frontend-domain.com"   # Update with actual frontend URL
